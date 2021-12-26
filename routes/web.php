@@ -23,7 +23,8 @@ use App\Http\Controllers\DashboardPostController;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home",
-        "active" => 'home'
+        "active" => 'home',
+        "image" => "image1.jpg"
     ]);
 });
 Route::get('/about', function () {
