@@ -66,7 +66,7 @@ Route::get('/dashboard/categories/cekSlug', [AdminCategoryController::class, 'ce
 Route::resource('/dashboard/categories', AdminCategoryController::class,)->except('show')->middleware('auth');
 
 Route::get('/create-symbolic', function () {
-    symlink(storage_path('/app/public'), public_path('storage'));
+    symlink(storage_path('/app/public/post-images'), public_path('storage'));
 
     echo "symlink created";
 });
